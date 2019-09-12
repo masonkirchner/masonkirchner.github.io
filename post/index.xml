@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on mason kirchner</title>
+    <link>http://masonkirchner.github.io/post/</link>
+    <description>Recent content in Posts on mason kirchner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://masonkirchner.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>making this blog</title>
+      <link>http://masonkirchner.github.io/post/making-this-blog/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://masonkirchner.github.io/post/making-this-blog/</guid>
+      <description>It was probably long overdue for me to set up a blog!
+I wanted to use something easy, and cheap, so I settled on using hugo, github pages, and, with a little twist, notion as my content delivery tool.
+The notion part is definitely the most interesting in my opinion. It was heavily inspired by https://blog.kowalczyk.info/article/a8cf04d756ec4963905960822b004440/powering-a-blog-with-notion-and-netlify.html
+I already used Notion daily, and I really liked the idea of simply being able to type into Notion and know that my ramblings would reliably be published to a blog.</description>
+    </item>
+    
+  </channel>
+</rss>
