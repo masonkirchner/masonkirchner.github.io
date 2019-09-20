@@ -76,13 +76,32 @@
     <span class="f6 gray">July 3, 2019</span>
 
       <article itemprop="articleBody" id="content" class="w-90 lh-copy">
-        <p>It was probably long overdue for me to set up a blog!</p>
+        
 
-<p>I wanted to use something easy, and cheap, so I settled on using hugo, github pages, and, with a little twist, notion as my content delivery tool.</p>
+<p>It was probably long overdue for me to set up a blog. Content on this blog will be some combination of Golang code, machine learning infrastructure, and doing fun stuff with football data.</p>
 
-<p>The notion part is definitely the most interesting in my opinion. It was heavily inspired by <a href="https://blog.kowalczyk.info/article/a8cf04d756ec4963905960822b004440/powering-a-blog-with-notion-and-netlify.html">https://blog.kowalczyk.info/article/a8cf04d756ec4963905960822b004440/powering-a-blog-with-notion-and-netlify.html</a></p>
+<p>To make this site I wanted to use something easy, and cheap so I settled on using <a href="https://gohugo.io/">Hugo</a>, <a href="https://pages.github.com/">GitHub Pages</a>, <a href="https://www.notion.so/">Notion</a> as my content delivery tool, and <a href="https://circleci.com/">CircleCI</a> for continuous delivery. The only expense here is Notion coming in at $4 a month, but I already used Notion for daily note taking so I consider tying Notion to this site as me getting more bang for my buck.</p>
 
-<p>I already used Notion daily, and I really liked the idea of simply being able to type into Notion and know that my ramblings would reliably be published to a blog.</p>
+<p>The Notion part is definitely the most interesting part of this build in my opinion. <a href="https://blog.kowalczyk.info/article/a8cf04d756ec4963905960822b004440/powering-a-blog-with-notion-and-netlify.html">It was inspired by this post</a>, and I really liked the idea of simply being able to type into Notion and know that I could have the content published.</p>
+
+<h2 id="how-i-built-this">How I Built This</h2>
+
+<p>Thanks for the intro, Guy. The workflow that I sought to create is one where I am able to write a page in Notion, and then have a job that I can trigger to pull that page and upload it to my blog. In this section I&rsquo;ll go into details for how I put this together for those that are interested in making something similar.</p>
+
+<p>To manage the code base and deploy the website, I made two GitHub repositories:</p>
+
+<ul>
+<li>One named <code>blog</code> for the Hugo Template and CircleCI script</li>
+<li>One named  <code>[masonkirchner.github.io](http://masonkirchner.github.io)</code> for the Hugo generated HTML that GitHub Pages will host</li>
+</ul>
+
+<p>TODO:</p>
+
+<ul>
+<li>Hugo intro</li>
+<li>Python Script</li>
+<li>CircleCI</li>
+</ul>
 
       </article>
 
