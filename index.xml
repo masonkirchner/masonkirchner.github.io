@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mason kirchner</title>
-    <link>http://masonkirchner.github.io/</link>
+    <link>https://masonkirchner.github.io/</link>
     <description>Recent content on mason kirchner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -13,20 +13,20 @@
     
     <item>
       <title>making this blog</title>
-      <link>http://masonkirchner.github.io/post/making-this-blog/</link>
+      <link>https://masonkirchner.github.io/post/making-this-blog/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://masonkirchner.github.io/post/making-this-blog/</guid>
+      <guid>https://masonkirchner.github.io/post/making-this-blog/</guid>
       <description>It was probably long overdue for me to set up a blog. Content on this blog will be some combination of Golang code, machine learning infrastructure, and doing fun stuff with football data.
 To make this site I wanted to use something easy, and cheap so I settled on using Hugo, GitHub Pages, Notion as my content delivery tool, and CircleCI for continuous delivery. The only expense here is Notion coming in at $4 a month, but I already used Notion for daily note taking so I consider tying Notion to this site as me getting more bang for my buck.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://masonkirchner.github.io/about/</link>
+      <link>https://masonkirchner.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://masonkirchner.github.io/about/</guid>
+      <guid>https://masonkirchner.github.io/about/</guid>
       <description>Hey, I&amp;rsquo;m Mason Kirchner and this is my blog.
 I&amp;rsquo;m a software engineer that enjoys developing software to facilitate the deployment, serving, and monitoring of machine learning models.
 In my spare time I like to practice data science on NFL or college football data, with a particular interest in trying to predict the success of incoming rookies.
