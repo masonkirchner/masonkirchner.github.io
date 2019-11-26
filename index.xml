@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://masonkirchner.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://masonkirchner.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,8 +17,10 @@
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://masonkirchner.github.io/post/making-this-blog/</guid>
-      <description>It was probably long overdue for me to set up a blog. Content on this blog will be some combination of Golang code, machine learning infrastructure, and doing fun stuff with football data.
-To make this site I wanted to use something easy, and cheap so I settled on using Hugo, GitHub Pages, Notion as my content delivery tool, and CircleCI for continuous delivery. The only expense here is Notion coming in at $4 a month, but I already used Notion for daily note taking so I consider tying Notion to this site as me getting more bang for my buck.</description>
+      <description>It was probably long overdue for me to set up a blog!
+I wanted to use something easy, and cheap, so I settled on using hugo, github pages, and, with a little twist, notion as my content delivery tool.
+The notion part is definitely the most interesting in my opinion. It was heavily inspired by https://blog.kowalczyk.info/article/a8cf04d756ec4963905960822b004440/powering-a-blog-with-notion-and-netlify.html
+I already used Notion daily, and I really liked the idea of simply being able to type into Notion and know that my ramblings would reliably be published to a blog.</description>
     </item>
     
     <item>
