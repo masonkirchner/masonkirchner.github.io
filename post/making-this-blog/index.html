@@ -86,7 +86,7 @@
 
 <h2 id="how-i-built-this">How I Built This</h2>
 
-<p>Thanks for the intro, Guy. The workflow that I sought to create is one where I am able to write a page in Notion, and then have a job that I can trigger to pull that page and upload it to my blog. In this section I&rsquo;ll go into details for how I put this together for those that are interested in making something similar.</p>
+<p>The workflow that I sought to create is one where I am able to write a page in Notion, and then have a job that I can trigger to pull that page and update my blog with the new page. In this section I&rsquo;ll go into details for how I put this together for those that are interested in making something similar.</p>
 
 <p>To manage the code base and deploy the website, I made two GitHub repositories:</p>
 
@@ -95,15 +95,35 @@
 <li>One named <code>masonkirchner.github.io</code> for the Hugo generated HTML that GitHub Pages will host</li>
 </ul>
 
-<p>Additionally, I needed to install Hugo</p>
+<p>Next I had to install Hugo, which can be done by following <a href="https://gohugo.io/getting-started/installing/">Hugo&rsquo;s installation guide</a>. After installing Hugo, I picked out <a href="https://github.com/siegerts/hugo-theme-basic">hugo-theme-basic</a> from the <a href="https://themes.gohugo.io/">Hugo Themes website</a>.</p>
 
-<p>TODO:</p>
+<p>From here, I had to figure out how to interact with the Notion API. After inspecting the network calls while using Notion in my browser, I figured out that there were three requests I needed to use to keep this blog up to date:</p>
+
+<ol>
+<li><code>POST /v3/loadPageChunk</code>
 
 <ul>
-<li>Hugo intro</li>
-<li>Python Script</li>
-<li>CircleCI</li>
-</ul>
+<li>This returns a list of IDs for the blog post Pages I created.</li>
+</ul></li>
+<li><code>POST /v3/enqueueTask</code>
+
+<ul>
+<li>This will queue up a Task that will export a Page with a given ID as a markdown file. It returns a Task ID.</li>
+</ul></li>
+<li><code>POST /v3/getTasks</code>
+
+<ul>
+<li>Given a Task ID, this returns a markdown file representing the Page.</li>
+</ul></li>
+</ol>
+
+<p>From here I was able to write a Python script to make these requests to fetch the markdown files that represent the blog posts. From there, I use a bash script to place those markdown files in the <code>content</code> directory of the repository, and then have Hugo generate the static site with those files. Finally, the updated code is used to make a Pull Request to the <code>[masonkirchner.github.io](http://masonkirchner.github.io)</code> repository where I can review any changes to the website before I deploy it to production.</p>
+
+<p>I&rsquo;ll provide more specific code for this whole process in the next blog post for those that may have had a difficult time following along.</p>
+
+<p>I&rsquo;m really excited to have this blog up and running! Until next time.</p>
+
+<p>-Mason</p>
 
       </article>
 
